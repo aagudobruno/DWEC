@@ -1,12 +1,10 @@
 function girarStr() {
     var input = document.getElementById("input1").value;
     var strGirat = [];
+    var strFin="";
     strGirat.length= input.length;
-    var j=0;
-    for (i=input.length;i>-1;i--){
-        strGirat[j]=input[i];
-        j++
+    for (i=input.length-1;i>-1;i--){
+        strFin=strFin+input[i];
     }
-    var strFin=strGirat.toStrings;
-    document.getElementById("results").innerHTML= strGirat;
+    document.getElementById("results").innerHTML= strFin;
 }
